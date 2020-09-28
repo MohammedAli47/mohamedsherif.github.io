@@ -8,38 +8,47 @@
     <title>Happy Birthday 💜</title>
 </head>
 <body>
-    <!--<audio src="images/hbd.mp3" type="audio/mpeg" hidden autoplay loop></audio>-->
-    <div class="stars">
-        <div class="star star1"><img src="images/star.png"></div>
-        <div class="star star2"><img src="images/star.png"></div>
-        <div class="star star3"><img src="images/star.png"></div>
-        <div class="star top_star"><img src="images/star.png"></div>
-        <div class="star star5"><img src="images/star.png"></div>
-        <div class="star star6"><img src="images/star.png"></div>
-        <div class="star star7"><img src="images/star.png"></div>
+    <audio src="images/hbd.mp3" type="audio/mpeg" hidden autoplay loop></audio>
+    <button class="btn">Click Me :)</button>
+    <div class="hidden">
+        <div class="stars">
+            <div class="star star1"><img src="images/star.png"></div>
+            <div class="star star2"><img src="images/star.png"></div>
+            <div class="star star3"><img src="images/star.png"></div>
+            <div class="star top_star"><img src="images/star.png"></div>
+            <div class="star star5"><img src="images/star.png"></div>
+            <div class="star star6"><img src="images/star.png"></div>
+            <div class="star star7"><img src="images/star.png"></div>
+        </div>
+        <p id="p1">Happy Birthday Yastaaaa.</p>
+        <p id="p2">أخويا الجدع اللي ملوش مرتجع</p>
+        <div class="cake">
+            <div class="top_top"></div>
+            <div class="top">
+                <div class="candle one"></div>
+                <div class="candle two"></div>
+                <div class="candle three"></div>
+            </div>
+            <div class="middle">
+                <div class="candle one"></div>
+                <div class="candle two"></div>
+            </div>
+            <div class="bottom">
+                <div class="candle one"></div>
+                <div class="candle two"></div>
+            </div>
+            <div class="bottom_bottom"></div>
+        </div>
+        <img id="gallery">
+        <p id="p3">Love You Fashhhhh555</p>
     </div>
-    <p id="p1">Happy Birthday Yastaaaa.</p>
-    <p id="p2">أخويا الجدع اللي ملوش مرتجع</p>
-    <div class="cake">
-        <div class="top_top"></div>
-        <div class="top">
-            <div class="candle one"></div>
-            <div class="candle two"></div>
-            <div class="candle three"></div>
-        </div>
-        <div class="middle">
-            <div class="candle one"></div>
-            <div class="candle two"></div>
-        </div>
-        <div class="bottom">
-            <div class="candle one"></div>
-            <div class="candle two"></div>
-        </div>
-        <div class="bottom_bottom"></div>
-    </div>
-    <img id="gallery">
-    <p id="p3">Love You Fashhhhhhhhh5</p>
     <script type="text/javascript">
+        let page = document.querySelector('.hidden');
+        let button = document.querySelector('.btn');
+        button.addEventListener('click', () => {
+            page.classList.remove('hidden');
+            button.classList.add('hidden');
+        });
         let i = 0;
         function scrollingGallery() {
             let images = ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg", "images/image4.jpg", "images/image5.jpg", "images/image6.jpg"];
