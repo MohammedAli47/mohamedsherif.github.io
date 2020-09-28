@@ -243,7 +243,7 @@ body {
 
 @media (max-width: 600px){
     body{
-        height: 150vh;
+        height: 120vh;
     }
 
     .top_star {
