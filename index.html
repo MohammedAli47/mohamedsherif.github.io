@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Happy Birthday 💜</title>
+</head>
+<body>
+    <!--<audio src="images/hbd.mp3" type="audio/mpeg" hidden autoplay loop></audio>-->
+    <div class="stars">
+        <div class="star star1"><img src="images/star.png"></div>
+        <div class="star star2"><img src="images/star.png"></div>
+        <div class="star star3"><img src="images/star.png"></div>
+        <div class="star top_star"><img src="images/star.png"></div>
+        <div class="star star5"><img src="images/star.png"></div>
+        <div class="star star6"><img src="images/star.png"></div>
+        <div class="star star7"><img src="images/star.png"></div>
+    </div>
+    <p id="p1">Happy Birthday Yastaaaa.</p>
+    <p id="p2">أخويا الجدع اللي ملوش مرتجع</p>
+    <div class="cake">
+        <div class="top_top"></div>
+        <div class="top">
+            <div class="candle one"></div>
+            <div class="candle two"></div>
+            <div class="candle three"></div>
+        </div>
+        <div class="middle">
+            <div class="candle one"></div>
+            <div class="candle two"></div>
+        </div>
+        <div class="bottom">
+            <div class="candle one"></div>
+            <div class="candle two"></div>
+        </div>
+        <div class="bottom_bottom"></div>
+    </div>
+    <img id="gallery">
+    <p id="p3">Love You Fashhhhhhhhh5</p>
+    <script type="text/javascript">
+        let i = 0;
+        function scrollingGallery() {
+            let images = ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg", "images/image4.jpg", "images/image5.jpg", "images/image6.jpg"];
+            document.getElementById('gallery').src = images[i];
+            i = i + 1;
+            if (i >= images.length) {
+                i = 0;
+            }
+        }
+        setInterval(scrollingGallery ,2000);
+    </script>
+</body>
+</html>
